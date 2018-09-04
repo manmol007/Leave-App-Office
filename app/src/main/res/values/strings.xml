@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LeaveApp</string>
+    <string name="EmailId">Enter Your Email </string>
+    <string name="Password">Enter Your Password </string>
+    <string name="SignIn">Sign In </string>
+    <string name="SignUp">Sign Up </string>
+    <string name="name">Enter Your Name </string>
+    <string name="register">Register </string>
+    <string name="tosentemail">Recepient Email</string>
+    <string name="subject">Reason for the leave</string>
+    <string name="submit">Submit</string>
+</resources>

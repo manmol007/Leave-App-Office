@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_centerVertical="true"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="#bdbdbd"
+    tools:context=".Register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/sss">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textColor="#000000"
+        android:layout_marginTop="50dp"
+        android:id="@+id/signup"
+        android:text="@string/SignUp"
+        android:gravity="center"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/signup"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/profile" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/NameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/profile"
+        android:layout_marginTop="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit"
+        android:textColorHint="#000000">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/NameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:drawableRight="@drawable/person"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="4dp"
+            android:textSize="15sp"
+            android:background="@null"
+            android:gravity="center"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/EmailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/NameLayout"
+        android:background="@drawable/edit"
+        android:textColorHint="#000000">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/EmailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/EmailId"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:paddingBottom="4dp"
+            android:drawableRight="@drawable/email"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="15sp"
+            android:background="@null"
+            android:gravity="center"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/etPasswordLayout"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/EmailLayout"
+        android:background="@drawable/edit"
+        android:textColorHint="#000000"
+        android:paddingLeft="15dp"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/PasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Password"
+            android:background="@null"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Collegelayout"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/etPasswordLayout"
+            android:background="@drawable/edit"
+            android:textColorHint="#000000"
+            app:passwordToggleEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/CollegeRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your College"
+                android:background="@null"
+                android:drawableRight="@drawable/college"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="4dp"
+                android:textColorHint="#000000"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:gravity="center"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/CityLayout"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/Collegelayout"
+            android:background="@drawable/edit"
+            android:textColorHint="#000000"
+            app:passwordToggleEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/CityRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your City"
+                android:background="@null"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:paddingBottom="4dp"
+                android:drawableRight="@drawable/location"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="15sp"
+                android:gravity="center"/>
+        </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CityLayout"
+        android:background="@drawable/edit"
+        android:id="@+id/spinnerLayout"
+        android:layout_margin="10dp">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        android:id="@+id/designation" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_marginTop="20dp"
+        android:id="@+id/RegisterSignUp"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/buttonback"
+        android:layout_below="@+id/spinnerLayout"/>
+
+    </RelativeLayout>
+
+</ScrollView>

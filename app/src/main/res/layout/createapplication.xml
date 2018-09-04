@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/sss">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shap"
+            android:id="@+id/layout">
+        <net.karthikraj.shapesimage.ShapesImage
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/propic"
+            android:background="#9e9e9e"
+            app:shape="hexagon"
+            android:src="@drawable/profile"
+            android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/towhomlayout"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit"
+            android:layout_below="@+id/layout">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/person"
+            android:layout_margin="10dp"/>
+            <Spinner
+            android:id="@+id/towhom"
+                android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/towhomlayout"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fromtext"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="From"
+                android:textColor="#000000"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/totext"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="To"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/categorylayout"
+            android:background="@drawable/edit"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/Linear2">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/list"/>
+            <Spinner
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/Linear2"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/subjectLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/categorylayout"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit"
+
+            android:textColorHint="#000000">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/Subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/subject"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:drawableLeft="@drawable/question"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="15sp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subjectLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonback"
+            android:text="EDIT APPLICATION"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttonback"
+            android:text="@string/submit"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

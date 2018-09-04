@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/Recyclerview"
+    android:focusableInTouchMode="true"
+    android:layout_margin="5dp"
+         android:background="@drawable/sss"
+        android:layout_height="match_parent"/>
+
